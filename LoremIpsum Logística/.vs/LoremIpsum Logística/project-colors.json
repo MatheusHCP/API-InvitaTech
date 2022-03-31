@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "1d8e488d-071a-4985-bb79-840ff9cd4568": {
+      "ProjectGuid": "1d8e488d-071a-4985-bb79-840ff9cd4568",
+      "DisplayName": "LoremIpsum Logística",
+      "ColorIndex": 0
+    },
+    "0a5cd5e4-f32d-4aea-94c8-b91e1abcae6e": {
+      "ProjectGuid": "0a5cd5e4-f32d-4aea-94c8-b91e1abcae6e",
+      "DisplayName": "Entidades",
+      "ColorIndex": 1
+    },
+    "82156ca4-0aee-4911-95b7-e3a0af3b04c9": {
+      "ProjectGuid": "82156ca4-0aee-4911-95b7-e3a0af3b04c9",
+      "DisplayName": "Repositorio",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}
