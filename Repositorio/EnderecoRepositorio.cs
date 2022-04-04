@@ -22,6 +22,16 @@ namespace Repositorio
             return listaEnderecos;
         }
 
+        public Endereco maxIDEndereco()
+        {
+            Endereco EnderecoID = null;
+            using (LoremIpsumDBContext db = new LoremIpsumDBContext())
+            {
+                EnderecoID = db.enderecos.OrderByDescending(p => p.Id).FirstOrDefault();
+            }
+            return EnderecoID;
+        }
+
         public void excluirtodosEnderecos(int id)
         {
 

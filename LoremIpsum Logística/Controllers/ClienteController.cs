@@ -88,6 +88,28 @@ namespace LoremIpsum_Logística.Controllers
                 Cliente cli = mapper.Map<Cliente>(model);
                 ClienteRepositorio cliRep = new ClienteRepositorio();
                 cliRep.edit(cli);
+                Endereco cliEndereco;
+                foreach (var item in model.ClienteEnderecos)
+                {
+                    if (item.Id == 0)
+                    {
+                        cliEndereco = new Endereco()
+                        {
+                            Id = 0,
+                            idCliente = model.id,
+                            tipoEndereco = char.Parse(item.tipoEndereco),
+                            CEP = item.CEP,
+                            logradouro = item.logradouro,
+                            numero = item.numero,
+                            complemento = item.complemento,
+                            bairro = item.bairro,
+                            cidade = item.cidade,
+                            UF = item.UF
+
+                        };
+                        (new EnderecoRepositorio()).add(cliEndereco);
+                    }
+                }
                 model.id = cli.id;
 
                 ret.status = true;
@@ -135,7 +157,7 @@ namespace LoremIpsum_Logística.Controllers
         }
 
         [HttpGet]
-        public retorno<List<ClienteModel>> allProdutos(string descricao)
+        public retorno<List<ClienteModel>> AllClientes(string descricao)
         {
             retorno<List<ClienteModel>> lista = new retorno<List<ClienteModel>>();
             try
@@ -143,7 +165,7 @@ namespace LoremIpsum_Logística.Controllers
                 if (descricao != null)
                 {
                     ClienteRepositorio cliRep = new ClienteRepositorio();
-                    List<Cliente> listaClientes = cliRep.getClientes(descricao); // Busca de produtos pela descrição.
+                    List<Cliente> listaClientes = cliRep.getClientes(descricao);
                     lista.status = true;
                     var mapper = new Mapper(AutoMapperConfig.RegisterMappings());
                     lista.resultado = mapper.Map<List<ClienteModel>>(listaClientes);

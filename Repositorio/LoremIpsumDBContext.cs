@@ -9,6 +9,9 @@ namespace Repositorio
 {
     public partial class LoremIpsumDBContext : DbContext
     {
+
+        string conexao = @"Server=SQL8001.site4now.net;Database=db_a84f21_matheuspereira;User Id=db_a84f21_matheuspereira_admin;password=12345678mM;MultipleActiveResultSets=true";
+
         public LoremIpsumDBContext()
         {
         }
@@ -22,7 +25,7 @@ namespace Repositorio
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server=MATHEUS-PC; Database=LoremIpsumDB; integrated security=true;");
+                optionsBuilder.UseSqlServer(conexao);
             }
         }
 
@@ -37,7 +40,7 @@ namespace Repositorio
             modelBuilder.Entity<Cliente>().
                 Property(p => p.nome).IsRequired().HasMaxLength(60);
             modelBuilder.Entity<Cliente>().
-                Property(p => p.dataNascimento).IsRequired().HasColumnType("datetime");
+                Property(p => p.dataNascimento).IsRequired().HasMaxLength(10);
             modelBuilder.Entity<Cliente>().
                 Property(p => p.sexo).IsRequired().HasColumnType("char(1)");
             #endregion
@@ -54,6 +57,10 @@ namespace Repositorio
                 Property(p => p.cidade).IsRequired().HasMaxLength(60); 
             modelBuilder.Entity<Endereco>().
                 Property(p => p.UF).IsRequired().HasMaxLength(60);
+            modelBuilder.Entity<Endereco>().
+                Property(p => p.bairro).HasMaxLength(60);
+            modelBuilder.Entity<Endereco>().
+                Property(p => p.complemento).HasMaxLength(60);
             #endregion
         }
 

@@ -120,6 +120,30 @@ namespace LoremIpsum_Logística.Controllers
             return lista;
         }
 
+        [HttpGet]
+        [Route("MaxID")]
+        public retorno<EnderecoModel> getMaxIDEndereco()
+        {
+            retorno<EnderecoModel> lista = new retorno<EnderecoModel>();
+            try
+            {
+
+                EnderecoRepositorio endRep = new EnderecoRepositorio();
+                Endereco listaEnderecos = endRep.maxIDEndereco();
+                lista.status = true;
+                var mapper = new Mapper(AutoMapperConfig.RegisterMappings());
+                lista.resultado = mapper.Map<EnderecoModel>(listaEnderecos);
+                
+            }
+            catch (Exception ex)
+            {
+                lista.status = false;
+                lista.mensagem = "ocorreu um erro ao retornar MaxID, verifique os dados técnicos: " + ex;
+            }
+
+            return lista;
+        }
+
     }
 
 }

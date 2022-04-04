@@ -6062,11 +6062,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mat_P\\source\\repos\\LoremIpsum Logística\\LoremIpsum Logística.csproj",
+      "projectUniqueName": "C:\\Users\\Mat_P\\source\\repos\\API-InvitaTech\\LoremIpsum Logística\\LoremIpsum Logística.csproj",
       "projectName": "LoremIpsum Logística",
-      "projectPath": "C:\\Users\\Mat_P\\source\\repos\\LoremIpsum Logística\\LoremIpsum Logística.csproj",
+      "projectPath": "C:\\Users\\Mat_P\\source\\repos\\API-InvitaTech\\LoremIpsum Logística\\LoremIpsum Logística.csproj",
       "packagesPath": "C:\\Users\\Mat_P\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Mat_P\\source\\repos\\LoremIpsum Logística\\obj\\",
+      "outputPath": "C:\\Users\\Mat_P\\source\\repos\\API-InvitaTech\\LoremIpsum Logística\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Mat_P\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6083,11 +6083,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Mat_P\\source\\repos\\Entidades\\Entidades.csproj": {
-              "projectPath": "C:\\Users\\Mat_P\\source\\repos\\Entidades\\Entidades.csproj"
+            "C:\\Users\\Mat_P\\source\\repos\\API-InvitaTech\\Entidades\\Entidades.csproj": {
+              "projectPath": "C:\\Users\\Mat_P\\source\\repos\\API-InvitaTech\\Entidades\\Entidades.csproj"
             },
-            "C:\\Users\\Mat_P\\source\\repos\\Repositorio\\Repositorio.csproj": {
-              "projectPath": "C:\\Users\\Mat_P\\source\\repos\\Repositorio\\Repositorio.csproj"
+            "C:\\Users\\Mat_P\\source\\repos\\API-InvitaTech\\Repositorio\\Repositorio.csproj": {
+              "projectPath": "C:\\Users\\Mat_P\\source\\repos\\API-InvitaTech\\Repositorio\\Repositorio.csproj"
             }
           }
         }

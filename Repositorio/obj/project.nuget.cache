@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kXA/dvc0opbUgp0sz46C+zJ5ced0eBkV2eFRu4ijSKZTZf8h0xBJsRM+7cl2yyQuff4kvV+Wc5wdA5kTzun8YQ==",
+  "dgSpecHash": "F+XqL+TqHXJOUc6kMk9agM/DGaGBd/vtnIDaCXDW9DWx4S6IRG7ao7iBu87DWr6sN3mLoDwkCYT0fAo+H3pIYA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Mat_P\\source\\repos\\Repositorio\\Repositorio.csproj",
+  "projectFilePath": "C:\\Users\\Mat_P\\source\\repos\\API-InvitaTech\\Repositorio\\Repositorio.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mat_P\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Mat_P\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

@@ -1,5 +1,4 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore.Migrations;
+﻿using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Repositorio.Migrations
 {
@@ -14,7 +13,7 @@ namespace Repositorio.Migrations
                     id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     nome = table.Column<string>(type: "nvarchar(60)", maxLength: 60, nullable: false),
-                    dataNascimento = table.Column<DateTime>(type: "datetime", nullable: false),
+                    dataNascimento = table.Column<string>(type: "nvarchar(10)", maxLength: 10, nullable: false),
                     sexo = table.Column<string>(type: "char(1)", nullable: false)
                 },
                 constraints: table =>
@@ -33,8 +32,8 @@ namespace Repositorio.Migrations
                     CEP = table.Column<string>(type: "nvarchar(9)", maxLength: 9, nullable: false),
                     logradouro = table.Column<string>(type: "nvarchar(60)", maxLength: 60, nullable: false),
                     numero = table.Column<string>(type: "nvarchar(10)", maxLength: 10, nullable: false),
-                    complemento = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    bairro = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    complemento = table.Column<string>(type: "nvarchar(60)", maxLength: 60, nullable: true),
+                    bairro = table.Column<string>(type: "nvarchar(60)", maxLength: 60, nullable: true),
                     cidade = table.Column<string>(type: "nvarchar(60)", maxLength: 60, nullable: false),
                     UF = table.Column<string>(type: "nvarchar(60)", maxLength: 60, nullable: false)
                 },

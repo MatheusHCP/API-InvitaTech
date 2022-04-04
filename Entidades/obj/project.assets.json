@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mat_P\\source\\repos\\Entidades\\Entidades.csproj",
+      "projectUniqueName": "C:\\Users\\Mat_P\\source\\repos\\API-InvitaTech\\Entidades\\Entidades.csproj",
       "projectName": "Entidades",
-      "projectPath": "C:\\Users\\Mat_P\\source\\repos\\Entidades\\Entidades.csproj",
+      "projectPath": "C:\\Users\\Mat_P\\source\\repos\\API-InvitaTech\\Entidades\\Entidades.csproj",
       "packagesPath": "C:\\Users\\Mat_P\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Mat_P\\source\\repos\\Entidades\\obj\\",
+      "outputPath": "C:\\Users\\Mat_P\\source\\repos\\API-InvitaTech\\Entidades\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Mat_P\\AppData\\Roaming\\NuGet\\NuGet.Config",
